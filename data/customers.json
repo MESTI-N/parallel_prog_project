@@ -1,0 +1,111 @@
+[
+  {
+    "FIRST_NAME": "",
+    "LAST_NAME": "",
+    "STREET_ADDRESS": "",
+    "CITY": "",
+    "POSTAL_CODE": "",
+    "COUNTRY": "",
+    "ACCOUNT_NUMBER": "",
+    "LETTER_TYPE": "",
+    "OFFER_TYPE": "",
+    "CREDIT_LIMIT": "",
+    "status": "invalid",
+    "errors": [
+      "FIRST_NAME is missing or empty",
+      "LAST_NAME is missing or empty",
+      "ACCOUNT_NUMBER is missing or empty",
+      "STREET_ADDRESS is missing or empty",
+      "CITY is missing or empty",
+      "POSTAL_CODE is missing or empty",
+      "COUNTRY is missing or empty",
+      "LETTER_TYPE must be 'welcome' or 'offer'"
+    ]
+  },
+  {
+    "FIRST_NAME": "John",
+    "LAST_NAME": "Smith",
+    "STREET_ADDRESS": "123 Maple Street",
+    "CITY": "Toronto",
+    "POSTAL_CODE": "M5V1A1",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "12345678",
+    "LETTER_TYPE": "welcome",
+    "OFFER_TYPE": "",
+    "CREDIT_LIMIT": "",
+    "status": "valid",
+    "errors": []
+  },
+  {
+    "FIRST_NAME": "Sarah",
+    "LAST_NAME": "Johnson",
+    "STREET_ADDRESS": "45 King Road",
+    "CITY": "Mississauga",
+    "POSTAL_CODE": "L5B2C3",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "987654321234",
+    "LETTER_TYPE": "offer",
+    "OFFER_TYPE": "Credit Card",
+    "CREDIT_LIMIT": "5000",
+    "status": "valid",
+    "errors": []
+  },
+  {
+    "FIRST_NAME": "Michael",
+    "LAST_NAME": "Brown",
+    "STREET_ADDRESS": "78 Oak Avenue",
+    "CITY": "Ottawa",
+    "POSTAL_CODE": "K1A0B1",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "555443332222",
+    "LETTER_TYPE": "offer",
+    "OFFER_TYPE": "Line of Credit",
+    "CREDIT_LIMIT": "12000",
+    "status": "valid",
+    "errors": []
+  },
+  {
+    "FIRST_NAME": "Emily",
+    "LAST_NAME": "Davis",
+    "STREET_ADDRESS": "9 Pine Lane",
+    "CITY": "Vancouver",
+    "POSTAL_CODE": "V5K0A1",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "11112222",
+    "LETTER_TYPE": "welcome",
+    "OFFER_TYPE": "",
+    "CREDIT_LIMIT": "",
+    "status": "valid",
+    "errors": []
+  },
+  {
+    "FIRST_NAME": "David",
+    "LAST_NAME": "Wilson",
+    "STREET_ADDRESS": "22 Birch Street",
+    "CITY": "Calgary",
+    "POSTAL_CODE": "T2P1J9",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "333344445555",
+    "LETTER_TYPE": "offer",
+    "OFFER_TYPE": "Credit Card",
+    "CREDIT_LIMIT": "8000",
+    "status": "valid",
+    "errors": []
+  },
+  {
+    "FIRST_NAME": "",
+    "LAST_NAME": "Anderson",
+    "STREET_ADDRESS": "15 Cedar Drive",
+    "CITY": "Montreal",
+    "POSTAL_CODE": "H2X3Y7",
+    "COUNTRY": "Canada",
+    "ACCOUNT_NUMBER": "22223333",
+    "LETTER_TYPE": "welcome",
+    "OFFER_TYPE": "",
+    "CREDIT_LIMIT": "",
+    "status": "invalid",
+    "errors": [
+      "FIRST_NAME is missing or empty"
+    ]
+  }
+]

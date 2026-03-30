@@ -1,0 +1,25 @@
+services:
+  validator:
+    build:
+      context: ./service1_validator
+      dockerfile: Dockerfile_service1
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./data:/app/data
+
+  # welcome-letter:
+  #   build: ./service2_welcome
+  #   ports:
+  #     - "5002:5002"
+  #   volumes:
+  #     - ./data:/app/data
+  #     - ./output:/app/output
+  #
+  # offer-letter:
+  #   build: ./service3_offer
+  #   ports:
+  #     - "5003:5003"
+  #   volumes:
+  #     - ./data:/app/data
+  #     - ./output:/app/output

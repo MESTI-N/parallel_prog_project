@@ -1,0 +1,50 @@
+# Banking Letter Generation System
+
+## Overview
+
+Project is a microservices based system that generates personalized banking letters for customers. It uses Docker containers to run each service seperately and they communicate with eachother using HTTP requests.
+
+The system supports two types of letters:
+- Welcome letters for new customers
+- Offer letters that include credit card or line of credit offers with a credit limit
+
+## Architecture
+
+There is three services in total:
+
+### Service 1 - Validator (Anthony Vydysh)
+This is the first service that runs. When you trigger it, it reads all the customer data from a JSON file and checks if all the required feilds are filled in properly. If something is missing or wrong, it marks that record as invalid so the other services knows not to process it.
+After validation is done, it sends the valid records to Service 2 or Service 3 depending on what type of letter needs to be generated.
+
+### Service 2 - Welcome Letter Generator
+
+
+### Service 3 - Offer Letter Generator
+
+
+## How the Triggering Works
+
+We chose to use simple HTTP calls between containers as our triggering mechanism. 
+
+How it works:
+
+1. You manually trigger Service 1 by sending a POST request to it (POST http://localhost:5001/validate)
+2. Service 1 reads the customer data, validates everthing, and writes the results back to the JSON file
+3. Then Service 1 automaticaly sends HTTP POST requests to Service 2 and Service 3 with the valid customer records
+4. Service 2 and 3 recieve the data and generate the letters
+
+We picked HTTP triggering because its the most straightforward approach. Each service is basically a small web server running in its own Docker container, and they can talk to eachother using the Docker.
+
+## Data Source
+
+We use a JSON file (data/customers.json) as our data source. It was converted from the sample CSV file that was provided. JSON works nicer with the HTTP based services since they already speak JSON natively.
+
+## How to Run
+
+
+## Technologies Used
+
+- Python 3.11
+- Flask (web framework)
+- Docker and Docker Compose
+- HTTP REST for inter service communication
