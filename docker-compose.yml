@@ -16,10 +16,10 @@ services:
   #     - ./data:/app/data
   #     - ./output:/app/output
   #
-  # offer-letter:
-  #   build: ./service3_offer
-  #   ports:
-  #     - "5003:5003"
-  #   volumes:
-  #     - ./data:/app/data
-  #     - ./output:/app/output
+  offer-letter:
+    build: ./service3_offer
+    ports:
+      - "5003:5003"
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
