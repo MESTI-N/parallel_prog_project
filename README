@@ -19,8 +19,8 @@ After validation is done, it sends the valid records to Service 2 or Service 3 d
 ### Service 2 - Welcome Letter Generator
 
 
-### Service 3 - Offer Letter Generator
-
+### Service 3 - Offer Letter Generator (Nick Mesti)
+Service 3 receives validated customer records for offer letters from Service 1 through an HTTP POST request. It fills the provided offer letter template with customer-specific fields such as name, address, account number, offer type, credit limit, and current date, then saves each generated letter as a text file.
 
 ## How the Triggering Works
 
